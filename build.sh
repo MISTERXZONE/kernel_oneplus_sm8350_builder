@@ -53,8 +53,8 @@ cp kernel/out/arch/arm64/boot/Image AnyKernel3/
 
 #create dtb
 echo ">create dtb and dtbo.img"
-cat $(find kernel/out/arch/arm64/boot/dts/vendor/oplus/lemonadev/ -type f -name "*.dtb" | sort) > AnyKernel3/dtb
-python libufdt/utils/src/mkdtboimg.py create AnyKernel3/dtbo.img --page_size=4096 $(find kernel/out/arch/arm64/boot/dts/vendor/oplus/lemonadev/ -type f -name "*.dtbo" | sort)
+cat $(find kernel/out/arch/arm64/boot/dts/vendor/oplus/porsche/ -type f -name "*.dtb" | sort) > AnyKernel3/dtb
+python libufdt/utils/src/mkdtboimg.py create AnyKernel3/dtbo.img --page_size=4096 $(find kernel/out/arch/arm64/boot/dts/vendor/oplus/porsche/ -type f -name "*.dtbo" | sort)
 
 #create AnyKernel3 zip
 echo ">clean AnyKernel3"
