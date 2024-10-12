@@ -31,7 +31,7 @@ cd $BASE_PATH
 
 #kernel
 echo ">clone kernel source"
-git clone --branch lineage-21 --depth 1 https://github.com/LineageOS/android_kernel_oneplus_sm8350 kernel
+git clone --branch fourteen --depth 1 https://github.com/MISTERXZONE/kernel_oneplus_sm8350_gato kernel
 
 #KernelSU ( <=v0.9.5 only)
 echo ">clone KernelSU and patch the kernel"
